@@ -37,8 +37,8 @@ Send to "/verify" route the auth token in the HTTP headers.
 
 Users are stored in memory. So, all users are deleted in server restarts. When the application starts, one user is setup for direct use. 
 
-email: user@example.com
-password: 1234
+* email: user@example.com
+* password: 1234
 
 You can edit the file index.js to configure this user with other data, or setup another users on application start.
 
@@ -47,7 +47,7 @@ You can edit the file index.js to configure this user with other data, or setup 
 * All GET routes of the REST API produced by JSON Server are public routes.
 * Other HTTP methods (POST, PUT, DELETE...) are behind authenticated routes
 
-Like "/verify" route, send to authenticated API routes the token in the headers:
+Like "/verify" route, send the token in headers to authenticated API routes, otherways you will get an 401 error response:
 
 ```
 {
