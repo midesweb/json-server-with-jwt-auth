@@ -1,0 +1,16 @@
+{
+  "series": [
+    {
+      "nombre": "House of Cards",
+      "temporadas": 6,
+      "emision": 2013,
+      "id": 1
+    },
+    {
+      "nombre": "Stranger Things",
+      "temporadas": 2,
+      "emision": 2016,
+      "id": 2
+    }
+  ]
+}

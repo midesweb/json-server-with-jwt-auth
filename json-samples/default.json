@@ -1,0 +1,9 @@
+{
+  "recipes": [
+    {
+      "name": "Paella",
+      "description": "Spanish recipe, tipical from Valencia, based on rice.",
+      "id": 1
+    }
+  ]
+}

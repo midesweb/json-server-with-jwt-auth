@@ -1,0 +1,24 @@
+{
+  "name": "json-server-jwt-auth",
+  "version": "0.0.1",
+  "description": "JSON Server Package plus JWT Auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/midesweb/json-server-with-jwt-auth.git"
+  },
+  "author": "Miguel Angel Alvarez @midesweb",
+  "homepage": "https://github.com/typicode/json-server",  
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "delay": "^2.0.0",
+    "express": "^4.16.2",
+    "json-server": "^0.12.0",
+    "jsonwebtoken": "^8.1.0",
+    "yargs": "^10.0.3"
+  }
+}
