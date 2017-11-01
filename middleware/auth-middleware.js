@@ -1,8 +1,10 @@
 const jwt = require('../security/jwt')
 
 module.exports = (req, res, next) => {
+  
   // Validate all GET routes but not /verify
   if(req.method === 'GET' && req.path != '/verify') {
+    next();
     return true;
   }
   if (isLoggedIn(req)) { // add your authorization logic here
