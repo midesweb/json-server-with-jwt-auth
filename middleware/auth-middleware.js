@@ -1,17 +1,19 @@
 const jwt = require('../security/jwt')
+const delay = require('delay');
 
 module.exports = (req, res, next) => {
-  
-  // Validate all GET routes but not /verify
-  if(req.method === 'GET' && req.path != '/verify') {
-    next();
-    return true;
-  }
-  if (isLoggedIn(req)) { // add your authorization logic here
-    next(); // continue to JSON Server router
-  } else {
-    res.status(401).send('Not logged in');
-  }
+  delay(500).then( () => {
+    // Validate all GET routes but not /verify
+    if(req.method === 'GET' && req.path != '/verify') {
+      next();
+      return true;
+    }
+    if (isLoggedIn(req)) { // add your authorization logic here
+      next(); // continue to JSON Server router
+    } else {
+      res.status(401).send('Not logged in');
+    }
+  });
  }
 
 function isLoggedIn(req) {

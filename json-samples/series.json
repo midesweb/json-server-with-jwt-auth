@@ -11,6 +11,12 @@
       "temporadas": 2,
       "emision": 2016,
       "id": 2
+    },
+    {
+      "nombre": "Los Soprano",
+      "temporadas": 6,
+      "emision": 1999,
+      "id": 3
     }
   ]
 }
