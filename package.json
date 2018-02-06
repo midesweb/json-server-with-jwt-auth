@@ -4,14 +4,15 @@
   "description": "JSON Server Package plus JWT Auth",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index --file=./json-samples/marcadores.json --port=3333 --authentication=no"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/midesweb/json-server-with-jwt-auth.git"
   },
   "author": "Miguel Angel Alvarez @midesweb",
-  "homepage": "https://github.com/typicode/json-server",  
+  "homepage": "https://github.com/typicode/json-server",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.4",

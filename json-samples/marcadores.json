@@ -1,0 +1,61 @@
+{
+  "tipos": [
+    {
+      "id": 0,
+      "tipo": "Indefinido"
+    },
+    {
+      "id": 1,
+      "tipo": "Público"
+    },
+    {
+      "id": 2,
+      "tipo": "Privado"
+    },
+    {
+      "id": 3,
+      "tipo": "Oculto"
+    },
+    {
+      "id": 4,
+      "tipo": "Promocionado"
+    }
+  ],
+  "marcadores": [
+    {
+      "titulo": "guiarte",
+      "url": "https://guiarte.com/",
+      "id": 11
+    },
+    {
+      "titulo": "Google Drive",
+      "url": "https://drive.google.com",
+      "id": 12
+    },
+    {
+      "titulo": "DesarrolloWeb.com",
+      "url": "https://desarrolloweb.com/",
+      "id": 13
+    },
+    {
+      "titulo": "Mozilla Labs",
+      "url": "http://www.mozillalabs.com/",
+      "id": 14
+    },
+    {
+      "titulo": "Windows",
+      "url": "https://www.microsoft.com/es-es/windows/",
+      "id": 15
+    },
+    {
+      "titulo": "Gmail",
+      "url": "http://mail.google.com",
+      "id": 16
+    },
+    {
+      "titulo": "El País",
+      "url": "http://elpais.com",
+      "id": 17
+    }
+  ]
+}

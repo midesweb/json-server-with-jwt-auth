@@ -10,6 +10,16 @@ yargs.options({
     alias: 'f',
     description: 'Set JSON File',
     default: './json-samples/default.json'
+  },
+  authentication: {
+    alias: 'a',
+    description: 'Enable authenticaded routes',
+    default: 'true'
+  },
+  delay: {
+    alias: 'd',
+    description: 'Miliseconds delay before response',
+    default: '1500'
   }
 });
 
@@ -42,8 +52,14 @@ const register = require('./routes/sign-in-route')(userStorage);
 server.post('/sign-in', register);
 
 // Auth middleware 
-const authMiddleware = require('./middleware/auth-middleware');
-server.use(authMiddleware);
+if (yargs.argv.authentication === 'true') {
+  const authMiddleware = require('./middleware/auth-middleware');
+  server.use(authMiddleware);
+}
+
+// delay middleware
+const delayMiddleware = require('./middleware/delay-middleware')(yargs.argv.delay);
+server.use(delayMiddleware);
 
 // Token verify route
 const verify = require('./routes/verify-route');
@@ -54,6 +70,6 @@ server.use(router);
 server.listen(yargs.argv.port, () => {
   console.log(`
 JSON Server is running on port ${yargs.argv.port}
-
+http://localhost:${yargs.argv.port}
 `)
 });
