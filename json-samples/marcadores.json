@@ -23,9 +23,10 @@
   ],
   "marcadores": [
     {
-      "titulo": "guiarte",
+      "titulo": "guiarte.com",
       "url": "https://guiarte.com/",
-      "id": 11
+      "id": 11,
+      "descripcion": "Guiarte es un sitio de guías de turismo"
     },
     {
       "titulo": "Google Drive",
@@ -56,6 +57,36 @@
       "titulo": "El País",
       "url": "http://elpais.com",
       "id": 17
+    },
+    {
+      "id": 43,
+      "url": "https://www.yahoo.com",
+      "titulo": "Yahoo!",
+      "descripcion": "es un portal"
+    },
+    {
+      "url": "https://www.webcomponents.org",
+      "titulo": "WebComponents.org",
+      "descripcion": "la Home de los componentes!!",
+      "id": 44
+    },
+    {
+      "url": "https://www.polymer-project.org",
+      "titulo": "Polymer project",
+      "descripcion": "La home de Polymer y su documentación.",
+      "id": 45
+    },
+    {
+      "url": "http://mnmnm",
+      "titulo": "",
+      "descripcion": "",
+      "id": 49
+    },
+    {
+      "url": "http://yo",
+      "titulo": "YO royoyyoyoy",
+      "descripcion": "",
+      "id": 52
     }
   ]
 }

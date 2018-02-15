@@ -18,6 +18,7 @@ module.exports = (req, res, next) => {
 
 function isLoggedIn(req) {
   let token = req.get('token');
+  //console.log('token', token);
   let session = jwt.verify(token);
   console.log('Session:\n', session);
   if (session) {
